@@ -88,8 +88,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="my-[10px] border-black border-[1px]" />
-      <div className="flex justify-between px-[20px]">
+      <hr className="my-[5px] border-black border-[1px]" />
+      <div className="flex justify-between px-[20px] py-[5px]">
         <div className="flex gap-[10px] items-center">
           <p>&copy; </p>
           <p>
