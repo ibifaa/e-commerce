@@ -1,7 +1,13 @@
 import React from "react";
 // import styled from 'styled-components';
 
-function Card({ src, price, name }) {
+interface CardProps {
+  src: string;
+  price: number;
+  name: string;
+}
+
+function Card({ src, price, name }: CardProps) {
   const backgroundImageStyle = `url(${src})`;
   return (
     <div className="card">
