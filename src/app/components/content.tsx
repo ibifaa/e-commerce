@@ -8,34 +8,40 @@ function Content() {
       src: "/images/png/tilesOne.png",
       price: 300,
       name: "Black Jacket",
+      status: "NEW",
     },
 
     {
       src: "images/png/product-new-img-1.jpg.png",
       price: 300,
       name: "Leather Jacket",
+      status: "",
     },
 
     {
       src: "images/png/Main-product-list-3.jpg.png",
       price: 220,
       name: "BLACK OUTFIT",
+      status: "SALE",
     },
     {
       src: "/images/png/Main-product-list-4.jpg.png",
       price: 120,
       name: "Black Jacket",
+      status: "",
     },
 
     {
       src: "images/png/product-new-img-1.jpg.png",
       price: 220,
       name: "BLACK OUTFIT",
+      status: "",
     },
     {
       src: "/images/png/Main-product-list-2.jpg.png",
       price: 300,
       name: "OIK JACKETS",
+      status: "",
     },
 
     {
@@ -47,6 +53,7 @@ function Content() {
       src: "/images/png/Main-product-list-8.jpg.png",
       price: 45,
       name: "black hat",
+      status: "SOLD",
     },
   ];
 
@@ -57,7 +64,6 @@ function Content() {
     "/images/png/div.qodef-e (4).png",
     "/images/png/div.qodef-e (5).png",
     "/images/png/div.qodef-e (1).png",
-    "/images/png/div.qodef-e (2).png",
     "/images/png/div.qodef-e (2).png",
     "/images/png/div.qodef-e (2).png",
   ];
@@ -84,16 +90,16 @@ function Content() {
   ];
 
   return (
-    <section className=" body-font text-black w-full">
-      <p className="text-center w-[40%] m-auto text-[1rem] mt-[60px]">
+    <section className=" body-font text-black w-full my-[50px]">
+      <p className="text-center w-[90%] sm:w-[60%] m-auto text-[29px] leading-[39px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim{" "}
-        <br /> veniam, quis nostrud
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud
       </p>
 
-      <div className="container py-24 mx-auto text-[12px] font-medium w-[90%] m-auto">
+      <div className="container py-24 mx-auto  font-medium w-[90%] m-auto">
         <nav className="flex justify-between my-[20px]">
-          <div className="flex gap-[30px]">
+          <div className="flex gap-[30px] text-[12px] leading-[15px]">
             {" "}
             <a> ALL PRODUCTS </a>
             <a>LIFESTYLE </a>
@@ -114,13 +120,14 @@ function Content() {
               src={item.src}
               price={item.price}
               name={item.name}
+              status={item.status}
             />
           ))}
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 sm:grid-cols-1 h-[600px] py-[50px] w-full ">
-        <div className="bg-[url('/images/png/home-image.png')] bg-[length:100%_100%] bg-top p-[10%] bg-no-repeat border-l-[1px] border-t-[1px] border-b-[1px]  border-[black] flex justify-center items-center w-full">
+      <div className="grid lg:grid-cols-2 sm:grid-cols-1  py-[50px] w-full ">
+        <div className="bg-[url('/images/png/home-image.png')] bg-[length:100%_100%] bg-top p-[10%] bg-no-repeat flex justify-center items-center w-full sm:h-[600px] h-[500px]">
           <div className="m-auto pt-[10px]">
             <p className="text-black font-bold text-[1.3rem] text-center py-[10px]">
               MAN
@@ -130,8 +137,9 @@ function Content() {
             </button>
           </div>
         </div>
-        <div className="bg-[url('/images/png/main-home-category-img-5.jpg.png')] bg-[length:100%_100%] bg-center-top p-[10%] bg-no-repeat border-r-[1px] border-l-[1px] border-t-[1px] border-b-[1px] border-[black] flex justify-center items-center w-full">
-          <div className="m-auto pt-[10px]">
+
+        <div className="bg-[url('/images/png/main-home-category-img-5.jpg.png')] bg-[length:100%_100%] bg-center-top p-[10%] bg-no-repeat  flex justify-center items-center w-full sm:h-[600px] h-[500px]">
+          <div className="m-auto sm:pt-[10px]">
             <p className="text-black font-bold text-[1.3rem] text-center py-[10px]">
               WOMAN
             </p>
@@ -142,19 +150,19 @@ function Content() {
         </div>
       </div>
 
-      <div className="m-auto">
-        <div className="py-[50px">
+      <div className="m-auto h-[600px] sm:h-[300px] ">
+        <div className="">
           <img
             src="images/svg/svg.qodef-svg--quote-testimonials.svg"
-            className="m-auto"
+            className="m-auto my-[20px]"
             alt="icon"
           />
-          <p className="text-[29px] lg:w-[60%] sm:[90%] text-center leading-[50px] m-auto">
+          <p className="text-[20px] sm:text-[29px] sm:w-[60%] w-[90%] text-center leading-[30px] sm:leading-[50px] m-auto my-[20px]">
             Accusantium doloremque laudantium, totam rem aperiam. Sed ut
             perspiciatis unde omnis iste natus error sit voluptatem.
           </p>
         </div>
-        <div className="flex gap-[30px] flex-wrap justify-center  my-[20px]">
+        <div className="flex sm:gap-[30px] gap-[10px] flex-wrap justify-center  sm:my-[20px]">
           <img
             src="images/svg/Video-clients-img-2.png.svg"
             alt="botique icon"
@@ -166,19 +174,21 @@ function Content() {
         </div>
       </div>
 
-      <div className="bg-[url('/images/png/div.elementor-background-overlay.png')] bg-top bg-auto h-[600px] w-[90%] m-auto">
-        <div className="text-center text-white font-bold m-auto pt-[20%]">
-          <h4 className="text-[3rem]">
+      <div className="bg-[url('/images/png/div.elementor-background-overlay.png')] bg-top bg-auto bg-contain sm:bg-cover bg-no-repeat sm:w-[90%] m-auto sm:my-[50px] h-[180px] sm:h-[500px]">
+        <div className="text-center text-white font-bold m-auto pt-[15%] sm:pt-[18%]">
+          <h4 className="text-[2rem] text-center ml-[10px]">
             ONYX <span>x</span> THE FLOW
           </h4>
-          <button className="underline my-[20px]">READ MORE</button>
+          <button className="underline my-[10px] text-[0.7rem] text-center">
+            READ MORE
+          </button>
         </div>
       </div>
 
       <div className="my-[50px]">
         <div className="text-center my-[40px]">
           <h3 className="text-[35px] leading-[42px]">Read Our Blog Posts</h3>
-          <p className="text-[18px] w-[30%] leading-[22px] text-center m-auto">
+          <p className="sm:text-[18px] sm:w-[30%] w-[40%] leading-[22px] text-center m-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing ectetur elit, sed
             do eiusmod.
           </p>
@@ -250,9 +260,9 @@ function Content() {
         </div>
       </div>
 
-      <div className="bg-[url('/images/png/elementor.png')] w-[100%]  h-[381px] bg-no-repeat bg-center bg-contain text-center m-auto">
+      <div className="bg-[url('/images/png/elementor.png')] w-[100%] h-[381px] bg-no-repeat bg-center bg-contain text-center m-auto">
         <div className="pt-[8%]">
-          <p className="w-[40%] m-auto text-[35px] leading-[42px] mb-[10px]">
+          <p className="w-[95%] sm:w-[40%]  m-auto sm:text-[35px] text-[20px]  leading-[25px] sm:leading-[42px]  mb-[10px]">
             Sing up to our newsletter for all the latest news & discounts.
           </p>
           <div className="auto flex justify-center">
@@ -281,7 +291,7 @@ function Content() {
           <img src="/images/png/div.qodef-m-image.png" alt="" />
         </div>
 
-        <div className="my-[25%] w-[100%]">
+        <div className="my-[25%] w-[100%] px-[30px]">
           <div className="mx-[10px]">
             <p className="mb-8 leading-relaxed text-[35px] leading-[35px] my-[20px]">
               Meet The Artists Behind The Corsen Maria & Sophia
@@ -300,8 +310,10 @@ function Content() {
       </div>
 
       <div>
-        <p>Instagram</p>
-        <p>Follow us on @qodeinteractive</p>
+        <div className="px-[30px]">
+          <p>Instagram</p>
+          <p>Follow us on @qodeinteractive</p>
+        </div>
 
         <div className="sm:flex gap-5 p-3 overflow-auto grid grid-cols-2">
           {imageData.map((item, index) => (

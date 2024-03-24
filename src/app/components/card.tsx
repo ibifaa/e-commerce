@@ -5,9 +5,10 @@ interface CardProps {
   src: string;
   price: number;
   name: string;
+  status: string;
 }
 
-function Card({ src, price, name }: CardProps) {
+function Card({ src, price, name, status }: CardProps) {
   const backgroundImageStyle = `url(${src})`;
   return (
     <div className="card">
@@ -16,9 +17,15 @@ function Card({ src, price, name }: CardProps) {
         style={{ backgroundImage: backgroundImageStyle }}
       >
         <div className="mt-4 flex justify-between">
-          <button className=" mx-[20px] py-[2px] m-auto px-[10px] border border-black bg-[white] text-[1rem]">
-            NEW
-          </button>
+          <div>
+            {" "}
+            {status && (
+              <p className="mx-[20px] py-[2px] m-auto px-[10px] border border-black bg-[white] text-[1rem]">
+                {status}
+              </p>
+            )}
+          </div>
+
           <div className="mx-[20px]">
             <img
               src="/images/svg/pseudo.svg"
