@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-black body-font">
+    <footer className="text-black body-font text-black">
       <div className="container px-5 py-5 mx-auto">
         <div className="flex flex-wrap md:text-left text-center grid sm:grid-cols-5 grid-cols-2">
           <div className=" w-full px-4">
@@ -18,14 +18,12 @@ function Footer() {
           </div>
 
           <div className=" w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium  tracking-widest text-sm mb-3">
               SUPPORT
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
-                  Help & Contact Us
-                </a>
+                <a className=" hover:text-gray-800">Help & Contact Us</a>
               </li>
               <li>
                 <a className="hover:text-gray-800">Returns & Refunds</a>
@@ -40,14 +38,14 @@ function Footer() {
           </div>
 
           <div className="w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium tracking-widest text-sm mb-3">
               COMPANY
             </h2>
             <img src="images/svg/ul.qodef-footer-list.png" alt="icon" />
           </div>
 
           <div className=" w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <h2 className="title-font font-medium tracking-widest text-sm mb-3">
               LOCATIONS
             </h2>
             <nav className="list-none mb-10">
@@ -57,7 +55,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="hover:text-gray-800">
                   Berlin, Buschallee, Germany
                 </a>
               </li>
