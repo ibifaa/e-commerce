@@ -48,6 +48,7 @@ function Content() {
       src: "/images/png/Main-product-list-7.jpg.png",
       price: 600,
       name: "BIEGE T-SHIRT",
+      status: "",
     },
     {
       src: "/images/png/Main-product-list-8.jpg.png",
